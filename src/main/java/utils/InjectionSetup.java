@@ -1,20 +1,24 @@
 package utils;
 
-import org.openqa.selenium.WebDriver;
 import pageObjectsManager.PageObjectsManager;
+
+
+import java.io.IOException;
 
 public class InjectionSetup {
 
 
-    public WebDriver driver;
+
     public String greenCartSearchItem;
     public PageObjectsManager pageObjectsManager;
     public WebdriverManaging webdriverManaging;
+    public PropertyFiles propertyFiles;
 
-    public InjectionSetup()
-    {
+
+    public InjectionSetup() throws IOException {
         webdriverManaging=new WebdriverManaging();
         pageObjectsManager=new PageObjectsManager(webdriverManaging.driverSetup());
+        propertyFiles=new PropertyFiles();
         System.out.println("InjectionSetup constructor invocation");
 
     }

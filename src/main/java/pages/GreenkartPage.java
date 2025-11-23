@@ -13,6 +13,11 @@ public class GreenkartPage extends BasePage {
         super(driver);
     }
 
+    public void openingURL(String url)
+    {
+        goToURL(url);
+    }
+
     public void sendingTextonSearchField(String search) {
         findField(searchFiled).sendKeys(search);
     }

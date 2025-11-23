@@ -41,4 +41,9 @@ public class BasePage {
         driver.switchTo().window(child);
     }
 
+    public void goToURL(String url)
+    {
+        driver.get(url);
+    }
+
 }
