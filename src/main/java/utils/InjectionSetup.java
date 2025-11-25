@@ -13,6 +13,7 @@ public class InjectionSetup {
     public PageObjectsManager pageObjectsManager;
     public WebdriverManaging webdriverManaging;
     public PropertyFiles propertyFiles;
+    public String greencartSearchedItem;
 
 
     public InjectionSetup() throws IOException {
